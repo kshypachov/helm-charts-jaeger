@@ -210,7 +210,7 @@ kafka:
     external:
       protocol: PLAINTEXT
   controller:
-    replicaCount: 3
+    replicaCount: 1
     extraConfig: |
       auto.create.topics.enable=true
 # Zookeeper has been deprecated by Kafka in favor of Kraft Mode: https://developer.confluent.io/learn/kraft/
