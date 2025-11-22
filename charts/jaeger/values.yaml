@@ -196,6 +196,7 @@ cassandra:
     dc_name: dc1
     rack_name: rack1
     endpoint_snitch: GossipingPropertyFileSnitch
+    cluster_size: 1
 # End: Override values on the Cassandra subchart to customize for Jaeger
 
 # Begin: Override values on the Kafka subchart to customize for Jaeger
