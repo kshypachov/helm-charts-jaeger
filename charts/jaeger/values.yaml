@@ -378,7 +378,7 @@ ingester:
 agent:
   podSecurityContext: {}
   securityContext: {}
-  enabled: true
+  enabled: false
   annotations: {}
   image:
     registry: ""
@@ -505,14 +505,12 @@ collector:
       # nodePort:
     otlp:
       grpc:
-        {}
-        # name: otlp-grpc
-        # port: 4317
+        name: otlp-grpc
+        port: 4317
         # nodePort:
       http:
-        {}
-        # name: otlp-http
-        # port: 4318
+        name: otlp-http
+        port: 4318
         # nodePort:
     admin:
       name: admin
