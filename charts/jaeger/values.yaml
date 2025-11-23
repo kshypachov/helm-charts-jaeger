@@ -378,7 +378,7 @@ ingester:
 agent:
   podSecurityContext: {}
   securityContext: {}
-  enabled: false
+  enabled: true
   annotations: {}
   image:
     registry: ""
@@ -410,13 +410,13 @@ agent:
     # samplingPort: (HTTP) serve configs, sampling strategies
     samplingPort: 5778
   resources:
-    {}
-    # limits:
-    #   cpu: 500m
-    #   memory: 512Mi
-    # requests:
-    #   cpu: 256m
-    #   memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 256m
+      memory: 128Mi
+
   serviceAccount:
     create: true
     # Explicitly mounts the API credentials for the Service Account
@@ -542,13 +542,12 @@ collector:
     #     - chart-example.local
     pathType:
   resources:
-    {}
-    # limits:
-    #   cpu: 1
-    #   memory: 1Gi
-    # requests:
-    #   cpu: 500m
-    #   memory: 512Mi
+    limits:
+      cpu: 1
+      memory: 1Gi
+    requests:
+      cpu: 500m
+      memory: 512Mi
   serviceAccount:
     create: true
     # Explicitly mounts the API credentials for the Service Account
