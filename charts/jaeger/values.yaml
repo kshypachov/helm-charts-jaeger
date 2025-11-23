@@ -505,15 +505,13 @@ collector:
       # nodePort:
     otlp:
       grpc:
-        {}
-        # name: otlp-grpc
-        # port: 4317
-        # nodePort:
+        name: otlp-grpc
+        port: 4317
+        #nodePort:
       http:
-        {}
-        # name: otlp-http
-        # port: 4318
-        # nodePort:
+        name: otlp-http
+        port: 4318
+        #nodePort:
     admin:
       name: admin
       targetPort: admin
