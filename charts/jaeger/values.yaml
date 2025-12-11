@@ -529,7 +529,7 @@ collector:
     # or:
     hosts:
       - host: collector.jaeger.k8s
-        servicePort: grpc
+        servicePort: otlp-grpc
     annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
