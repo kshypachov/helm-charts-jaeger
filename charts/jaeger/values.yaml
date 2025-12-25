@@ -189,7 +189,9 @@ storage:
 cassandra:
   persistence:
     # To enable persistence, please see the documentation for the Cassandra chart
-    enabled: false
+    enabled: true
+    storageClass: "longhorn-1-replica"
+    size: 20Gi
   config:
     cluster_size: 1
     cluster_name: jaeger
