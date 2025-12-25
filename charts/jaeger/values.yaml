@@ -268,7 +268,7 @@ schema:
     # - name: MODE
     #   value: prod
     # - name: TRACE_TTL
-    #   value: "172800"
+    #   value: "86400"
     # - name: DEPENDENCIES_TTL
     #   value: "0"
 
