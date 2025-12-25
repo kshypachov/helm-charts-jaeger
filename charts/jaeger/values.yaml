@@ -267,7 +267,7 @@ schema:
     - name: TRACE_TTL
       value: "86400"
   
-    []
+    #[]
     # - name: MODE
     #   value: prod
     # - name: DEPENDENCIES_TTL
