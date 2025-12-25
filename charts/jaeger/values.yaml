@@ -264,11 +264,12 @@ schema:
   ## Deadline for cassandra schema creation job
   activeDeadlineSeconds: 300
   extraEnv:
+    - name: TRACE_TTL
+      value: "86400"
+  
     []
     # - name: MODE
     #   value: prod
-    - name: TRACE_TTL
-      value: "86400"
     # - name: DEPENDENCIES_TTL
     #   value: "0"
 
